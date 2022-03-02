@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js"
+      integrity="sha512-juaCj8zi594KHQqb92foyp87mCSriYjw3BcTHaXsAn4pEB1YWh+z+XQScMxIxzsjfM4BeVFV3Ij113lIjWiC2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <script src="./socket.io/socket.io.js" defer></script>
+    <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Chat</title>
 </head>
 <body>
     <h1>Join our chat!</h1>
     <form action="/login" method="post" class="form">
-        <input type="text" placeholder="Usuario" id="user" required>
+        <input type="text" placeholder="Usuario" id="username" name="username" required>
         <button id="btn">Entrar</button>
     </form>
     </section>
 
-    <script src="./socket.io/socket.io.js" ></script>
-    <script src="./js/script.js"></script>
+
 </body>
 </html>
