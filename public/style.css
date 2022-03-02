@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Roboto:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #364156;
+}
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Comforter', cursive;
+    
+}
+.form {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+#user, #btn, #textInput, #chatBtn,#salirBtn {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 2rem;
+    border: none;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2em;
+}
+::placeholder {
+    color: #fff;
+  }
+#user {
+    border-bottom: 3px solid #011638;
+}
+#btn {
+    background-color: #8EA4D2;
+    border-radius: 5px;
+    color: #011638;
+    font-weight: bold;
+}
+
+/* chat */
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.chatTitle {
+    margin-top: 1rem;
+    font-size: 4rem;
+    width: 90%;
+}
+#salirBtn {
+    width: 5%;
+    background-color: #8EA4D2;
+    justify-content: flex-end;
+    align-self: flex-end;
+    border-radius: 5px;
+}
+#chat {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+#usersList {
+    width: 10%;
+    height: 80vh;
+    background-color: #202735;
+}
+#messagesContainer {
+    width: 90%;
+    height: 80vh;
+    background-color: #7694d6;
+}
+
+
+
+/* chat body */
+#chatBody {
+    width: 100%;
+    height: 5rem;
+    /* background-color: #7694d6; */
+    background-color: #364156;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chatForm {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+#textInput, #chatBtn {
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 0;
+}
+#textInput {
+    width: 90%;
+    height: 3rem;
+    line-height: 3rem;
+    padding-left: 1%;
+    background-color: #8EA4D2;
+}
+textarea::placeholder {
+    text-align: left;
+    line-height: 3rem;
+    padding-left: 1%;
+}
+#chatBtn {
+    width: 5%;
+    margin-left: 1%;
+    height: 3rem;
+}

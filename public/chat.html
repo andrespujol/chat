@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js"
+      integrity="sha512-juaCj8zi594KHQqb92foyp87mCSriYjw3BcTHaXsAn4pEB1YWh+z+XQScMxIxzsjfM4BeVFV3Ij113lIjWiC2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="principal">
+        <h1 class="chatTitle">chat</h1>
+        <button id="salirBtn" onclick="redirectToLogin()">Salir</button>
+    </section>
+    <section id="chat">
+        <div id="usersList">
+    
+        </div>
+        <div id="messagesContainer">
+            <article id="bot-messages" class="bot-messages">
+                <span><b>Chat bot dice:</b> Welcome!</span>
+            </article>
+            <article id="otherUser-messages" class="otherUser-messages">
+                <div id="otherUser-message" class="otherUser-message">
+                    <span><b>usuario:</b> 17:00 pm</span>
+                    <span>mensaje</span>
+                </div>
+            </article>
+            <article id="myUser-messages" class="myUser-messages">
+                <div id="myUser-message" class="myUser-message">
+                    <span><b>yo:</b> 17:00 pm</span>
+                    <span>mensaje</span>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="chatBody">
+        <form id="chatForm">
+            <textarea name="textInput" id="textInput" placeholder="Escribe aquí un mensaje" required></textarea>
+            <button type="submit" value="send" id="chatBtn">Enviar</button>
+        </form>
+    </section>
+    <script src="./socket.io/socket.io.js" ></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
